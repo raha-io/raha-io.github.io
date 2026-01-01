@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Raha IO - Strategy, Product, Platforms",
+    "description": "Bilingual studio delivering product strategy, digital platforms, and data-led experiences for ambitious teams."
+  },
+  "brand": {
+    "name": "Raha IO",
+    "nameFa": "Raha IO",
+    "tagline": "Strategy + Product + Engineering"
+  },
+  "lang": {
+    "en": "English",
+    "fa": "Farsi"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "process": "Process",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Company",
+    "title": "Build a calmer, smarter digital core.",
+    "subtitle": "Raha IO partners with growing teams to design resilient products, launch modern platforms, and align operations around insight.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "See capabilities",
+    "note": "Bilingual delivery in English and Persian - Based in Tehran + Remote",
+    "pillarsTitle": "Capability Map",
+    "pillars": [
+      {
+        "title": "Strategy Sprints",
+        "desc": "Vision, roadmap, and business alignment in 2-3 weeks."
+      },
+      {
+        "title": "Platform Builds",
+        "desc": "Nuxt, Vue, and modern stacks tuned for scale."
+      },
+      {
+        "title": "Data & AI",
+        "desc": "Analytics, automation, and decision intelligence."
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "12+",
+      "label": "Industries partnered"
+    },
+    {
+      "value": "98%",
+      "label": "Client retention"
+    },
+    {
+      "value": "6 weeks",
+      "label": "Average MVP launch"
+    }
+  ],
+  "about": {
+    "title": "A company built for clarity",
+    "body": "We are a small, senior team of strategists, designers, and engineers. We work alongside founders and operators to turn complex challenges into confident releases.",
+    "highlights": [
+      "Discovery workshops and executive alignment",
+      "Product design systems that stay consistent",
+      "Engineering handoff that scales beyond the first launch"
+    ]
+  },
+  "services": {
+    "title": "What we do",
+    "subtitle": "End-to-end delivery for teams who need focus, speed, and quality.",
+    "items": [
+      {
+        "title": "Product Strategy",
+        "desc": "Market research, positioning, and prioritized roadmaps.",
+        "tags": ["Vision", "Roadmap", "Go-to-market"]
+      },
+      {
+        "title": "Digital Platforms",
+        "desc": "Web apps, portals, and branded experiences.",
+        "tags": ["Nuxt", "Vue", "Design systems"]
+      },
+      {
+        "title": "Data & Automation",
+        "desc": "Dashboards, pipelines, and AI-enabled workflows.",
+        "tags": ["Analytics", "Ops", "AI"]
+      },
+      {
+        "title": "Service Design",
+        "desc": "Customer journeys and operational playbooks.",
+        "tags": ["CX", "Service ops", "Enablement"]
+      }
+    ]
+  },
+  "process": {
+    "title": "How we work",
+    "steps": [
+      {
+        "title": "Align",
+        "desc": "Define the north star, outcomes, and constraints."
+      },
+      {
+        "title": "Design",
+        "desc": "Shape the experience, system, and technical plan."
+      },
+      {
+        "title": "Deliver",
+        "desc": "Build, launch, and support your team post-release."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Recent engagements",
+    "items": [
+      {
+        "title": "Aurora Fintech",
+        "desc": "Multi-tenant onboarding platform and KYC automation.",
+        "result": "48% faster activation"
+      },
+      {
+        "title": "Nava Health",
+        "desc": "Patient portal redesign with bilingual UX.",
+        "result": "2.3x appointment conversions"
+      },
+      {
+        "title": "Atlas Logistics",
+        "desc": "Operations dashboard and predictive routing.",
+        "result": "19% reduction in idle time"
+      }
+    ]
+  },
+  "clients": {
+    "title": "Teams who trust Raha",
+    "items": ["Aurora", "Nava", "Atlas", "Sepehr Group", "Calmbyte", "Rivermark"]
+  },
+  "testimonial": {
+    "quote": "Raha translated complexity into a platform our teams could finally scale. The delivery felt calm, thoughtful, and fast.",
+    "name": "Lina Moradi",
+    "role": "VP Product",
+    "company": "Aurora Fintech"
+  },
+  "contact": {
+    "title": "Let's build the next chapter",
+    "subtitle": "Tell us about your roadmap. We'll respond within two business days.",
+    "email": "hello@raha.io",
+    "phone": "+98 21 0000 0000",
+    "address": "Tehran, Iran - Remote-first engagements worldwide",
+    "hours": "Sunday-Thursday, 9:00-18:00 IRST",
+    "cta": "Schedule a call",
+    "labels": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "hours": "Hours"
+    }
+  },
+  "footer": {
+    "copyright": "(c) 2025 Raha IO. All rights reserved.",
+    "links": {
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  }
+}
