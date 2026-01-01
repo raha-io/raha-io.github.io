@@ -528,6 +528,16 @@ main {
   color: var(--ink-soft);
 }
 
+.contact-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-item a svg {
+  flex-shrink: 0;
+}
+
 .site-footer {
   padding: 2.5rem 0;
   border-top: 1px solid rgba(27, 30, 38, 0.08);
