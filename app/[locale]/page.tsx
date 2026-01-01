@@ -1,6 +1,13 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import Image from 'next/image'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
+
+const cloudLogos: Record<string, string> = {
+  'AWS': '/logos/aws.svg',
+  'Hetzner': '/logos/hetzner.svg',
+  'Arvancloud': '/logos/arvancloud.svg',
+}
 
 type Pillar = {
   title: string
@@ -77,9 +84,18 @@ export default async function HomePage({
             </div>
             <div className="hero-card reveal" style={{ '--delay': '0.2s' } as React.CSSProperties}>
               <div className="card-label">{t('hero.pillarsTitle')}</div>
-              {heroPillars.map((pillar, index) => (
+              {heroPillars.map((pillar) => (
                 <div key={pillar.title} className="pillar">
-                  <div className="pillar-index">0{index + 1}</div>
+                  <div className="pillar-logo">
+                    {cloudLogos[pillar.title] && (
+                      <Image
+                        src={cloudLogos[pillar.title]}
+                        alt={`${pillar.title} logo`}
+                        width={48}
+                        height={28}
+                      />
+                    )}
+                  </div>
                   <div>
                     <h3>{pillar.title}</h3>
                     <p className="section-subtitle">{pillar.desc}</p>

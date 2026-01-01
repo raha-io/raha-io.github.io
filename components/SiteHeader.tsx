@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import LocaleToggle from './LocaleToggle'
 
@@ -10,7 +11,13 @@ export default function SiteHeader() {
     <header className="site-header">
       <div className="container header-inner">
         <a className="brand" href="#home">
-          <span className="brand-mark" aria-hidden="true"></span>
+          <Image
+            src="/logo.png"
+            alt="Raha IO"
+            width={44}
+            height={44}
+            className="brand-mark"
+          />
           <span className="brand-text">
             <strong>{t('brand.name')}</strong>
             <span>{t('brand.tagline')}</span>
