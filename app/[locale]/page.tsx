@@ -4,9 +4,9 @@ import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
 
 const cloudLogos: Record<string, string> = {
-  'AWS': '/logos/aws.svg',
-  'Hetzner': '/logos/hetzner.svg',
-  'Arvancloud': '/logos/arvancloud.svg',
+  'AWS': '/logos/aws.png',
+  'Hetzner': '/logos/hetzner.jpg',
+  'Arvancloud': '/logos/arvancloud.jpg',
 }
 
 type Pillar = {
@@ -215,8 +215,9 @@ export default async function HomePage({
               <h2 className="section-title">{t('clients.title')}</h2>
             </div>
             <div className="clients-list">
-              <a href="https://bitbarg.com/" target="_blank" rel="noopener noreferrer">
-                <Image src="/logos/bitbarg.jpg" alt={t('clients.bitbarg')} width={120} height={40} style={{ objectFit: 'contain' }} />
+              <a href="https://bitbarg.com/" target="_blank" rel="noopener noreferrer" className="client-item">
+                <Image src="/logos/bitbarg.jpg" alt={t('clients.bitbarg')} width={40} height={40} className="client-logo" />
+                <span className="client-name">{t('clients.bitbarg')}</span>
               </a>
             </div>
             <div className="testimonial" style={{ marginTop: '2.5rem' }}>

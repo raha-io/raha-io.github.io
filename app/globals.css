@@ -502,9 +502,35 @@ main {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
-  color: var(--ink-faint);
-  font-weight: 600;
+  gap: 1.5rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.client-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  background: var(--panel);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  transition: 0.2s ease;
+}
+
+.client-item:hover {
+  border-color: var(--accent);
+}
+
+.client-logo {
+  border-radius: 8px;
+  object-fit: contain;
+  background: transparent;
+}
+
+.client-name {
+  font-size: 0.95rem;
+  color: var(--ink);
 }
 
 .testimonial {
