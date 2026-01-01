@@ -215,7 +215,9 @@ export default async function HomePage({
               <h2 className="section-title">{t('clients.title')}</h2>
             </div>
             <div className="clients-list">
-              <a href="https://bitbarg.com/" target="_blank" rel="noopener noreferrer">Bitbarg</a>
+              <a href="https://bitbarg.com/" target="_blank" rel="noopener noreferrer">
+                <Image src="/logos/bitbarg.jpg" alt={t('clients.bitbarg')} width={120} height={40} style={{ objectFit: 'contain' }} />
+              </a>
             </div>
             <div className="testimonial" style={{ marginTop: '2.5rem' }}>
               <blockquote>&ldquo;{t('testimonial.quote')}&rdquo;</blockquote>

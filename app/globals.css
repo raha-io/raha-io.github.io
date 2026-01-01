@@ -52,6 +52,11 @@ html[dir="rtl"] .eyebrow {
   text-transform: none;
 }
 
+html[dir="rtl"] #contact {
+  direction: ltr;
+  text-align: left;
+}
+
 a {
   color: inherit;
   text-decoration: none;
