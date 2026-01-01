@@ -238,6 +238,18 @@ export default async function HomePage({
                 <a href={`tel:${t('contact.phone')}`}>{t('contact.phone')}</a>
               </div>
               <div className="contact-item">
+                <strong>{t('contact.labels.whatsapp')}</strong>
+                <a href={`https://wa.me/${t('contact.whatsapp')}`} target="_blank" rel="noopener noreferrer">
+                  {t('contact.phone')}
+                </a>
+              </div>
+              <div className="contact-item">
+                <strong>{t('contact.labels.telegram')}</strong>
+                <a href={`https://t.me/+${t('contact.telegram')}`} target="_blank" rel="noopener noreferrer">
+                  {t('contact.phone')}
+                </a>
+              </div>
+              <div className="contact-item">
                 <strong>{t('contact.labels.location')}</strong>
                 <span>{t('contact.address')}</span>
               </div>

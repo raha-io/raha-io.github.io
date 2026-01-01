@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Raha IO - Strategy, Product, Platforms",
-    "description": "Bilingual studio delivering product strategy, digital platforms, and data-led experiences for ambitious teams."
+    "title": "Raha IO - Infrastructure, DevOps, Cloud",
+    "description": "We provide infrastructure and DevOps solutions based on AWS, Hetzner, and Arvancloud to reduce your team's operational overhead."
   },
   "brand": {
     "name": "Raha IO",
     "nameFa": "Raha IO",
-    "tagline": "Strategy + Product + Engineering"
+    "tagline": "Infrastructure + DevOps + Cloud"
   },
   "lang": {
     "en": "English",
@@ -22,73 +22,73 @@
   },
   "hero": {
     "eyebrow": "Company",
-    "title": "Build a calmer, smarter digital core.",
-    "subtitle": "Raha IO partners with growing teams to design resilient products, launch modern platforms, and align operations around insight.",
+    "title": "Infrastructure that runs itself.",
+    "subtitle": "Raha IO helps teams reduce costs around maintaining and controlling infrastructure with DevOps solutions built on AWS, Hetzner, and Arvancloud.",
     "ctaPrimary": "Start a project",
-    "ctaSecondary": "See capabilities",
+    "ctaSecondary": "See services",
     "note": "Bilingual delivery in English and Persian - Based in Tehran + Remote",
-    "pillarsTitle": "Capability Map",
+    "pillarsTitle": "Cloud Partners",
     "pillars": [
       {
-        "title": "Strategy Sprints",
-        "desc": "Vision, roadmap, and business alignment in 2-3 weeks."
+        "title": "AWS",
+        "desc": "Enterprise-grade cloud infrastructure and managed services."
       },
       {
-        "title": "Platform Builds",
-        "desc": "Nuxt, Vue, and modern stacks tuned for scale."
+        "title": "Hetzner",
+        "desc": "Cost-effective dedicated servers and cloud solutions."
       },
       {
-        "title": "Data & AI",
-        "desc": "Analytics, automation, and decision intelligence."
+        "title": "Arvancloud",
+        "desc": "Regional CDN, cloud, and edge services for MENA."
       }
     ]
   },
   "stats": [
     {
-      "value": "12+",
-      "label": "Industries partnered"
+      "value": "40%",
+      "label": "Average cost reduction"
     },
     {
-      "value": "98%",
-      "label": "Client retention"
+      "value": "99.9%",
+      "label": "Uptime SLA"
     },
     {
-      "value": "6 weeks",
-      "label": "Average MVP launch"
+      "value": "24/7",
+      "label": "Monitoring & support"
     }
   ],
   "about": {
-    "title": "A company built for clarity",
-    "body": "We are a small, senior team of strategists, designers, and engineers. We work alongside founders and operators to turn complex challenges into confident releases.",
+    "title": "Infrastructure experts, cost optimizers",
+    "body": "We are a team of DevOps engineers and cloud architects. We help teams build reliable infrastructure while reducing the overhead of maintenance and operations.",
     "highlights": [
-      "Discovery workshops and executive alignment",
-      "Product design systems that stay consistent",
-      "Engineering handoff that scales beyond the first launch"
+      "Multi-cloud architecture design and implementation",
+      "CI/CD pipelines and GitOps workflows",
+      "Infrastructure as Code with Terraform and Ansible"
     ]
   },
   "services": {
     "title": "What we do",
-    "subtitle": "End-to-end delivery for teams who need focus, speed, and quality.",
+    "subtitle": "End-to-end infrastructure and DevOps services to reduce your operational costs.",
     "items": [
       {
-        "title": "Product Strategy",
-        "desc": "Market research, positioning, and prioritized roadmaps.",
-        "tags": ["Vision", "Roadmap", "Go-to-market"]
+        "title": "Cloud Infrastructure",
+        "desc": "Design and deploy scalable infrastructure on AWS, Hetzner, or Arvancloud.",
+        "tags": ["AWS", "Hetzner", "Arvancloud"]
       },
       {
-        "title": "Digital Platforms",
-        "desc": "Web apps, portals, and branded experiences.",
-        "tags": ["Nuxt", "Vue", "Design systems"]
+        "title": "DevOps & CI/CD",
+        "desc": "Automated pipelines, GitOps, and deployment workflows.",
+        "tags": ["GitLab CI", "GitHub Actions", "ArgoCD"]
       },
       {
-        "title": "Data & Automation",
-        "desc": "Dashboards, pipelines, and AI-enabled workflows.",
-        "tags": ["Analytics", "Ops", "AI"]
+        "title": "Kubernetes & Containers",
+        "desc": "Container orchestration, cluster management, and microservices.",
+        "tags": ["Kubernetes", "Docker", "Helm"]
       },
       {
-        "title": "Service Design",
-        "desc": "Customer journeys and operational playbooks.",
-        "tags": ["CX", "Service ops", "Enablement"]
+        "title": "Monitoring & Observability",
+        "desc": "Full-stack monitoring, alerting, and incident response.",
+        "tags": ["Prometheus", "Grafana", "ELK"]
       }
     ]
   },
@@ -96,16 +96,16 @@
     "title": "How we work",
     "steps": [
       {
-        "title": "Align",
-        "desc": "Define the north star, outcomes, and constraints."
+        "title": "Assess",
+        "desc": "Audit your current infrastructure and identify optimization opportunities."
       },
       {
-        "title": "Design",
-        "desc": "Shape the experience, system, and technical plan."
+        "title": "Architect",
+        "desc": "Design scalable, cost-effective infrastructure tailored to your needs."
       },
       {
-        "title": "Deliver",
-        "desc": "Build, launch, and support your team post-release."
+        "title": "Automate",
+        "desc": "Implement IaC, CI/CD, and monitoring to minimize manual operations."
       }
     ]
   },
@@ -113,19 +113,19 @@
     "title": "Recent engagements",
     "items": [
       {
-        "title": "Aurora Fintech",
-        "desc": "Multi-tenant onboarding platform and KYC automation.",
-        "result": "48% faster activation"
+        "title": "E-commerce Platform",
+        "desc": "Migration from on-premise to AWS with auto-scaling and CDN.",
+        "result": "60% infrastructure cost reduction"
       },
       {
-        "title": "Nava Health",
-        "desc": "Patient portal redesign with bilingual UX.",
-        "result": "2.3x appointment conversions"
+        "title": "Fintech Startup",
+        "desc": "Kubernetes cluster setup with GitOps deployment pipeline.",
+        "result": "Deploy time reduced from hours to minutes"
       },
       {
-        "title": "Atlas Logistics",
-        "desc": "Operations dashboard and predictive routing.",
-        "result": "19% reduction in idle time"
+        "title": "Media Company",
+        "desc": "Hybrid Hetzner + Arvancloud setup for video streaming.",
+        "result": "45% lower bandwidth costs"
       }
     ]
   },
@@ -133,23 +133,37 @@
     "title": "Teams who trust Raha",
     "items": ["Aurora", "Nava", "Atlas", "Sepehr Group", "Calmbyte", "Rivermark"]
   },
+  "team": {
+    "cto": {
+      "name": "Parham Alvani",
+      "role": "CTO"
+    },
+    "ceo": {
+      "name": "Elaheh Dastan",
+      "role": "CEO"
+    }
+  },
   "testimonial": {
-    "quote": "Raha translated complexity into a platform our teams could finally scale. The delivery felt calm, thoughtful, and fast.",
+    "quote": "Raha transformed our infrastructure from a constant headache to something we barely think about. Our team can finally focus on building product.",
     "name": "Lina Moradi",
-    "role": "VP Product",
+    "role": "CTO",
     "company": "Aurora Fintech"
   },
   "contact": {
-    "title": "Let's build the next chapter",
-    "subtitle": "Tell us about your roadmap. We'll respond within two business days.",
-    "email": "hello@raha.io",
-    "phone": "+98 21 0000 0000",
+    "title": "Let's optimize your infrastructure",
+    "subtitle": "Tell us about your current setup. We'll respond within two business days.",
+    "email": "elahe.dstn@gmail.com",
+    "phone": "+98 935 225 7378",
+    "whatsapp": "+989352257378",
+    "telegram": "+989352257378",
     "address": "Tehran, Iran - Remote-first engagements worldwide",
     "hours": "Sunday-Thursday, 9:00-18:00 IRST",
     "cta": "Schedule a call",
     "labels": {
       "email": "Email",
       "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
       "location": "Location",
       "hours": "Hours"
     }
