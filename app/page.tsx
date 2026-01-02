@@ -1,16 +1,16 @@
-'use client'
+'use client';
 
-import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 export default function RootPage() {
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
-    const browserLang = navigator.language || navigator.languages?.[0] || 'en'
-    const locale = browserLang.startsWith('fa') ? 'fa' : 'en'
-    router.replace(`/${locale}`)
-  }, [router])
+    const browserLang = navigator.language || navigator.languages?.[0] || 'en';
+    const locale = browserLang.startsWith('fa') ? 'fa' : 'en';
+    router.replace(`/${locale}`);
+  }, [router]);
 
-  return null
+  return null;
 }

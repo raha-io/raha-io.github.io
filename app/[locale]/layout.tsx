@@ -1,43 +1,43 @@
-import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, setRequestLocale, getTranslations } from 'next-intl/server'
-import { notFound } from 'next/navigation'
-import { routing } from '@/i18n/routing'
-import '@/app/globals.css'
+import { notFound } from 'next/navigation';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
+import '@/app/globals.css';
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }))
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'meta' })
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'meta' });
   return {
     title: t('title'),
     description: t('description'),
     icons: { icon: '/icon.png', apple: '/icon.png' },
     alternates: {
-      languages: { en: '/en', fa: '/fa' }
-    }
-  }
+      languages: { en: '/en', fa: '/fa' },
+    },
+  };
 }
 
 export default async function LocaleLayout({
   children,
   params,
 }: {
-  children: React.ReactNode
-  params: Promise<{ locale: string }>
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params
+  const { locale } = await params;
 
-  if (!routing.locales.includes(locale as typeof routing.locales[number])) {
-    notFound()
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
+    notFound();
   }
 
-  setRequestLocale(locale)
+  setRequestLocale(locale);
 
-  const messages = await getMessages()
-  const dir = locale === 'fa' ? 'rtl' : 'ltr'
+  const messages = await getMessages();
+  const dir = locale === 'fa' ? 'rtl' : 'ltr';
 
   return (
     <html lang={locale} dir={dir}>
@@ -47,10 +47,8 @@ export default async function LocaleLayout({
         <link rel="alternate" hrefLang="x-default" href="/en" />
       </head>
       <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
-  )
+  );
 }

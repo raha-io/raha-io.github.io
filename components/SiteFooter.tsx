@@ -1,9 +1,9 @@
-'use client'
+'use client';
 
-import { useTranslations } from 'next-intl'
+import { useTranslations } from 'next-intl';
 
 export default function SiteFooter() {
-  const t = useTranslations()
+  const t = useTranslations();
 
   return (
     <footer className="site-footer">
@@ -37,5 +37,5 @@ export default function SiteFooter() {
         <div className="footer-bottom">{t('footer.copyright')}</div>
       </div>
     </footer>
-  )
+  );
 }

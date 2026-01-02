@@ -1,23 +1,17 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import { useTranslations } from 'next-intl'
-import LocaleToggle from './LocaleToggle'
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import LocaleToggle from './LocaleToggle';
 
 export default function SiteHeader() {
-  const t = useTranslations()
+  const t = useTranslations();
 
   return (
     <header className="site-header">
       <div className="container header-inner">
         <a className="brand" href="#home">
-          <Image
-            src="/logo.png"
-            alt="Raha IO"
-            width={44}
-            height={44}
-            className="brand-mark"
-          />
+          <Image src="/logo.png" alt="Raha IO" width={44} height={44} className="brand-mark" />
           <span className="brand-text">
             <strong>{t('brand.name')}</strong>
             <span>{t('brand.tagline')}</span>
@@ -38,5 +32,5 @@ export default function SiteHeader() {
         </div>
       </div>
     </header>
-  )
+  );
 }

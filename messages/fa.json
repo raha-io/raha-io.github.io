@@ -73,38 +73,22 @@
       {
         "title": "زیرساخت کلود",
         "desc": "طراحی و استقرار زیرساخت مقیاس‌پذیر روی AWS، Hetzner یا ابرآروان.",
-        "tags": [
-          "AWS",
-          "Hetzner",
-          "ابرآروان"
-        ]
+        "tags": ["AWS", "Hetzner", "ابرآروان"]
       },
       {
         "title": "دوآپس و CI/CD",
         "desc": "پایپ‌لاین‌های خودکار، GitOps و گردش‌کار استقرار.",
-        "tags": [
-          "GitLab CI",
-          "GitHub Actions",
-          "ArgoCD"
-        ]
+        "tags": ["GitLab CI", "GitHub Actions", "ArgoCD"]
       },
       {
         "title": "کوبرنتیز و کانتینر",
         "desc": "ارکستریشن کانتینر، مدیریت کلاستر و میکروسرویس‌ها.",
-        "tags": [
-          "Kubernetes",
-          "Docker",
-          "Helm"
-        ]
+        "tags": ["Kubernetes", "Docker", "Helm"]
       },
       {
         "title": "مانیتورینگ و قابلیت مشاهده",
         "desc": "مانیتورینگ کامل، هشداردهی و پاسخ به حوادث.",
-        "tags": [
-          "Prometheus",
-          "Grafana",
-          "ELK"
-        ]
+        "tags": ["Prometheus", "Grafana", "ELK"]
       }
     ]
   },
