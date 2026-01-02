@@ -274,8 +274,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                         href={`https://github.com/${member.social.github}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="GitHub"
                       >
+                        <span className="sr-only">GitHub</span>
                         <svg
                           width="20"
                           height="20"
@@ -292,8 +292,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                         href={`https://linkedin.com/in/${member.social.linkedin}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="LinkedIn"
                       >
+                        <span className="sr-only">LinkedIn</span>
                         <svg
                           width="20"
                           height="20"
@@ -310,8 +310,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                         href={`https://youtube.com/${member.social.youtube}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="YouTube"
                       >
+                        <span className="sr-only">YouTube</span>
                         <svg
                           width="20"
                           height="20"
@@ -328,8 +328,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                         href={`https://instagram.com/${member.social.instagram}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Instagram"
                       >
+                        <span className="sr-only">Instagram</span>
                         <svg
                           width="20"
                           height="20"
@@ -346,8 +346,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                         href={`https://reddit.com/user/${member.social.reddit}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Reddit"
                       >
+                        <span className="sr-only">Reddit</span>
                         <svg
                           width="20"
                           height="20"
@@ -360,12 +360,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                       </a>
                     )}
                     {member.social.website && (
-                      <a
-                        href={member.social.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Website"
-                      >
+                      <a href={member.social.website} target="_blank" rel="noopener noreferrer">
+                        <span className="sr-only">Website</span>
                         <svg
                           width="20"
                           height="20"
