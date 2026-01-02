@@ -90,6 +90,16 @@
         "title": "مانیتورینگ و قابلیت مشاهده",
         "desc": "مانیتورینگ کامل، هشداردهی و پاسخ به حوادث.",
         "tags": ["Prometheus", "Grafana", "ELK"]
+      },
+      {
+        "title": "ابزارهای سلف‌هاست",
+        "desc": "استقرار و مدیریت GitLab، Sentry، PostgreSQL و سایر ابزارها روی زیرساخت اختصاصی شما.",
+        "tags": ["GitLab", "Sentry", "PostgreSQL"]
+      },
+      {
+        "title": "ارکستریشن کانتینر",
+        "desc": "کوبرنتیز داخلی، کلاستر Swarm یا Docker Compose چندنودی بر اساس نیاز شما.",
+        "tags": ["Kubernetes", "Docker Swarm", "Docker Compose"]
       }
     ]
   },

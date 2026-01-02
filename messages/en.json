@@ -90,6 +90,16 @@
         "title": "Monitoring & Observability",
         "desc": "Full-stack monitoring, alerting, and incident response.",
         "tags": ["Prometheus", "Grafana", "ELK"]
+      },
+      {
+        "title": "Self-hosted Tools",
+        "desc": "Deploy and manage self-hosted GitLab, Sentry, PostgreSQL, and more on your own infrastructure.",
+        "tags": ["GitLab", "Sentry", "PostgreSQL"]
+      },
+      {
+        "title": "Container Orchestration",
+        "desc": "In-house Kubernetes, Swarm clusters, or multi-node Docker Compose setups based on your needs.",
+        "tags": ["Kubernetes", "Docker Swarm", "Docker Compose"]
       }
     ]
   },
