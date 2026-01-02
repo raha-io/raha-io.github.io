@@ -73,7 +73,6 @@ img {
 
 .page {
   position: relative;
-  overflow: hidden;
 }
 
 main {
@@ -151,6 +150,14 @@ main {
   position: sticky;
   top: 0;
   z-index: 10;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  -webkit-backdrop-filter: blur(0);
+  backdrop-filter: blur(0);
+  transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.site-header.scrolled {
   border-bottom: 1px solid var(--border-light);
   background: rgba(249, 242, 230, 0.85);
   -webkit-backdrop-filter: blur(12px);

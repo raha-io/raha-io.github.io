@@ -27,7 +27,7 @@
     "subtitle": "Raha IO helps teams reduce costs around maintaining and controlling infrastructure with DevOps solutions built on AWS, Hetzner, and Arvancloud.",
     "ctaPrimary": "Start a project",
     "ctaSecondary": "See services",
-    "note": "Bilingual delivery in English and Persian - Based in Tehran + Remote",
+    "note": "Based in Iran, Tehran + Remote",
     "pillarsTitle": "Cloud Partners",
     "pillars": [
       {
@@ -156,7 +156,9 @@
         "bio": "DevOps engineer and open source enthusiast. Building infrastructure that just works.",
         "social": {
           "github": "1995parham",
-          "youtube": "@parhamalvani"
+          "youtube": "@parhamalvani",
+          "reddit": "1995parham",
+          "website": "https://1995parham.me"
         }
       }
     ]

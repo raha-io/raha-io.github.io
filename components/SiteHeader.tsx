@@ -2,13 +2,26 @@
 
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { useEffect, useState } from 'react';
 import LocaleToggle from './LocaleToggle';
 
 export default function SiteHeader() {
   const t = useTranslations();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container header-inner">
         <a className="brand" href="#home">
           <Image src="/logo.png" alt="Raha IO" width={44} height={44} className="brand-mark" />
