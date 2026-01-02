@@ -80,20 +80,6 @@ main {
   z-index: 1;
 }
 
-.page::before {
-  content: "";
-  position: absolute;
-  width: 480px;
-  height: 480px;
-  border-radius: 50%;
-  filter: blur(0px);
-  z-index: 0;
-  opacity: 0.24;
-  top: -180px;
-  left: -140px;
-  background: radial-gradient(circle, rgba(228, 103, 61, 0.35), transparent 70%);
-}
-
 .container {
   width: min(1120px, 92vw);
   margin-inline: auto;
