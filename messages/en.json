@@ -69,36 +69,36 @@
   },
   "services": {
     "title": "What we do",
-    "subtitle": "End-to-end infrastructure and DevOps services to reduce your operational costs.",
+    "subtitle": "End-to-end infrastructure and DevOps services with clear deliverables, lower costs, and higher reliability.",
     "items": [
       {
         "title": "Cloud Infrastructure",
-        "desc": "Design and deploy scalable infrastructure on AWS, Hetzner, or Arvancloud.",
+        "desc": "Architecture and landing zones with security baselines and rollout plans on AWS, Hetzner, or Arvancloud.",
         "tags": ["AWS", "Hetzner", "Arvancloud"]
       },
       {
         "title": "DevOps & CI/CD",
-        "desc": "Automated pipelines, GitOps, and deployment workflows.",
+        "desc": "Standardized pipelines with templates, quality gates, and safe rollback paths.",
         "tags": ["GitLab CI", "GitHub Actions", "ArgoCD"]
       },
       {
-        "title": "Kubernetes & Containers",
-        "desc": "Container orchestration, cluster management, and microservices.",
+        "title": "Kubernetes",
+        "desc": "Production clusters with autoscaling, policy controls, and secure multi-tenant isolation.",
         "tags": ["Kubernetes", "Docker", "Helm"]
       },
       {
         "title": "Monitoring & Observability",
-        "desc": "Full-stack monitoring, alerting, and incident response.",
+        "desc": "Dashboards, SLOs, and alert playbooks to shorten incident recovery time.",
         "tags": ["Prometheus", "Grafana", "ELK"]
       },
       {
         "title": "Self-hosted Tools",
-        "desc": "Deploy and manage self-hosted GitLab, Sentry, PostgreSQL, and more on your own infrastructure.",
+        "desc": "Private GitLab, Sentry, PostgreSQL, and more with upgrades, backups, and hardening handled.",
         "tags": ["GitLab", "Sentry", "PostgreSQL"]
       },
       {
         "title": "Container Orchestration",
-        "desc": "In-house Kubernetes, Swarm clusters, or multi-node Docker Compose setups based on your needs.",
+        "desc": "Right-sized orchestration: Swarm or multi-node Docker Compose with hardening and upgrades.",
         "tags": ["Kubernetes", "Docker Swarm", "Docker Compose"]
       }
     ]
