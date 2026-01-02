@@ -6,11 +6,11 @@
   "brand": {
     "name": "Raha IO",
     "nameFa": "Raha IO",
-    "tagline": "Infrastructure + DevOps + Cloud"
+    "tagline": "Infrastructure, DevOps and Cloud"
   },
   "lang": {
     "en": "English",
-    "fa": "Farsi"
+    "fa": "Persian"
   },
   "nav": {
     "home": "Home",
@@ -143,12 +143,7 @@
       "role": "CEO"
     }
   },
-  "testimonial": {
-    "quote": "Raha transformed our infrastructure from a constant headache to something we barely think about. Our team can finally focus on building product.",
-    "name": "Lina Moradi",
-    "role": "CTO",
-    "company": "Aurora Fintech"
-  },
+  "testimonial": {},
   "contact": {
     "title": "Let's optimize your infrastructure",
     "subtitle": "Tell us about your current setup. We'll respond within two business days.",
