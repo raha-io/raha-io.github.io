@@ -11,9 +11,7 @@ export function getAllPostSlugs(): string[] {
     return [];
   }
   const fileNames = fs.readdirSync(postsDirectory);
-  return fileNames
-    .filter((name) => name.endsWith('.md'))
-    .map((name) => name.replace(/\.md$/, ''));
+  return fileNames.filter((name) => name.endsWith('.md')).map((name) => name.replace(/\.md$/, ''));
 }
 
 export function getAllPosts(): Post[] {

@@ -36,7 +36,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <p className="post-meta">{post.frontmatter.date}</p>
         </header>
 
-{/* biome-ignore lint/security/noDangerouslySetInnerHtml: Markdown HTML is sanitized and controlled */}
+        {/* biome-ignore lint/security/noDangerouslySetInnerHtml: Markdown HTML is sanitized and controlled */}
         <div className="prose" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </article>
