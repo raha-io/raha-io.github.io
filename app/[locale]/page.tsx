@@ -7,7 +7,7 @@ const cloudLogos: Record<string, string> = {
   AWS: '/logos/aws.svg',
   Hetzner: '/logos/hetzner.svg',
   Arvancloud: '/logos/arvancloud.svg',
-  'ابرآروان': '/logos/arvancloud.svg',
+  ابرآروان: '/logos/arvancloud.svg',
 };
 
 type Pillar = {
