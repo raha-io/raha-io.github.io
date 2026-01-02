@@ -37,6 +37,7 @@ export default function SiteHeader() {
           <a href="#projects">{t('nav.projects')}</a>
           <a href="#team">{t('nav.team')}</a>
           <a href="#contact">{t('nav.contact')}</a>
+          <a href="/blog">Blog</a>
         </nav>
         <div className="header-actions">
           <a className="btn small ghost" href="#contact">
