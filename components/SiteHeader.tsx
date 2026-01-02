@@ -22,6 +22,7 @@ export default function SiteHeader() {
           <a href="#services">{t('nav.services')}</a>
           <a href="#process">{t('nav.process')}</a>
           <a href="#projects">{t('nav.projects')}</a>
+          <a href="#team">{t('nav.team')}</a>
           <a href="#contact">{t('nav.contact')}</a>
         </nav>
         <div className="header-actions">

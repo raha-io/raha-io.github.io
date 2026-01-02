@@ -18,6 +18,7 @@
     "services": "خدمات",
     "process": "فرایند",
     "projects": "پروژه‌ها",
+    "team": "تیم",
     "contact": "تماس"
   },
   "hero": {
@@ -134,14 +135,31 @@
     "bitbarg": "صرافی آنلاین بیت‌برگ"
   },
   "team": {
-    "cto": {
-      "name": "پرهام الوانی",
-      "role": "مدیر فنی"
-    },
-    "ceo": {
-      "name": "الهه داستان",
-      "role": "مدیرعامل"
-    }
+    "title": "تیم ما",
+    "subtitle": "افراد پشت رها آی‌او",
+    "members": [
+      {
+        "name": "الهه داستان",
+        "role": "مدیرعامل و بنیان‌گذار",
+        "username": "elaheh-dastan",
+        "bio": "معمار کلود و استراتژیست کسب‌وکار با علاقه به ساخت راه‌حل‌های مقیاس‌پذیر.",
+        "social": {
+          "github": "elaheh-dastan",
+          "linkedin": "elaheh-dastan",
+          "instagram": "elaheh.dstn"
+        }
+      },
+      {
+        "name": "پرهام الوانی",
+        "role": "مدیر فنی",
+        "username": "1995parham",
+        "bio": "مهندس دوآپس و علاقه‌مند به متن‌باز. زیرساختی می‌سازد که کار می‌کند.",
+        "social": {
+          "github": "1995parham",
+          "youtube": "@1995parham"
+        }
+      }
+    ]
   },
   "testimonial": {},
   "contact": {

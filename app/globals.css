@@ -391,16 +391,19 @@ main {
 }
 
 .pillar-logo {
-  min-width: 48px;
-  height: 28px;
+  min-width: 80px;
+  width: 80px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .pillar-logo img {
-  width: 48px;
-  height: 28px;
+  max-width: 80px;
+  max-height: 32px;
+  width: auto;
+  height: auto;
   object-fit: contain;
 }
 
@@ -630,6 +633,77 @@ main {
   outline: none;
   color: var(--accent);
   text-decoration: underline;
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-card {
+  background: var(--panel);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-light);
+  margin-bottom: 0.5rem;
+}
+
+.team-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+
+.team-role {
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.team-bio {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.team-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.team-social a {
+  color: var(--ink-soft);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.team-social a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.team-social a:focus-visible {
+  outline: none;
+  color: var(--accent);
 }
 
 .site-footer {

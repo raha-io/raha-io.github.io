@@ -18,6 +18,7 @@
     "services": "Services",
     "process": "Process",
     "projects": "Projects",
+    "team": "Team",
     "contact": "Contact"
   },
   "hero": {
@@ -134,14 +135,31 @@
     "bitbarg": "Bitbarg Online Exchange"
   },
   "team": {
-    "cto": {
-      "name": "Parham Alvani",
-      "role": "CTO"
-    },
-    "ceo": {
-      "name": "Elaheh Dastan",
-      "role": "CEO"
-    }
+    "title": "Meet the Team",
+    "subtitle": "The people behind Raha IO",
+    "members": [
+      {
+        "name": "Elaheh Dastan",
+        "role": "CEO & Founder",
+        "username": "elaheh-dastan",
+        "bio": "Cloud architect and business strategist with a passion for building scalable solutions.",
+        "social": {
+          "github": "elaheh-dastan",
+          "linkedin": "elaheh-dastan",
+          "instagram": "elahe.dstn"
+        }
+      },
+      {
+        "name": "Parham Alvani",
+        "role": "CTO",
+        "username": "1995parham",
+        "bio": "DevOps engineer and open source enthusiast. Building infrastructure that just works.",
+        "social": {
+          "github": "1995parham",
+          "youtube": "@1995parham"
+        }
+      }
+    ]
   },
   "testimonial": {},
   "contact": {
