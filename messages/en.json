@@ -170,10 +170,6 @@
     }
   },
   "footer": {
-    "copyright": "(c) 2025 Raha IO. All rights reserved.",
-    "links": {
-      "privacy": "Privacy",
-      "terms": "Terms"
-    }
+    "copyright": "© 2025 Raha IO. All rights reserved."
   }
 }

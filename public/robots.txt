@@ -1,2 +1,3 @@
 User-Agent: *
 Disallow:
+Sitemap: https://raha-io.github.io/sitemap.xml
