@@ -5,6 +5,7 @@ import './blog.css';
 export const metadata = {
   title: 'Blog | Raha IO',
   description: 'Technical articles about DevOps, infrastructure, and cloud.',
+  icons: { icon: '/icon.png', apple: '/icon.png' },
 };
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
