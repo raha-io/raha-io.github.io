@@ -1,7 +1,5 @@
 # Raha IO Website
 
-A bilingual (English/Persian) website built with Next.js 15, React 19, and next-intl.
-
 ## Setup
 
 Install dependencies:
@@ -27,7 +25,3 @@ pnpm build
 ```
 
 The static site is exported to the `out` directory.
-
-## Deployment
-
-This site is automatically deployed to GitHub Pages on push to main branch via GitHub Actions.
