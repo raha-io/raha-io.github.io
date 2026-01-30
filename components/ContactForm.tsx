@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 import { SendIcon } from './icons';
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error';
@@ -115,11 +115,7 @@ ${formData.message}
         />
       </div>
       <div className="form-actions">
-        <button
-          type="submit"
-          className="btn primary"
-          disabled={formState === 'submitting'}
-        >
+        <button type="submit" className="btn primary" disabled={formState === 'submitting'}>
           {formState === 'submitting' ? (
             t('sending')
           ) : formState === 'success' ? (
@@ -135,7 +131,9 @@ ${formData.message}
           type="button"
           className="btn ghost"
           onClick={sendViaEmail}
-          disabled={formState === 'submitting' || !formData.name || !formData.email || !formData.message}
+          disabled={
+            formState === 'submitting' || !formData.name || !formData.email || !formData.message
+          }
         >
           {t('sendViaEmail')}
         </button>

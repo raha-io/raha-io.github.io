@@ -1,19 +1,19 @@
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import SiteFooter from '@/components/SiteFooter';
-import SiteHeader from '@/components/SiteHeader';
 import ContactForm from '@/components/ContactForm';
 import {
-  GitHubIcon,
-  LinkedInIcon,
-  YouTubeIcon,
-  InstagramIcon,
-  RedditIcon,
-  WebsiteIcon,
   EmailIcon,
-  WhatsAppIcon,
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  RedditIcon,
   TelegramIcon,
+  WebsiteIcon,
+  WhatsAppIcon,
+  YouTubeIcon,
 } from '@/components/icons';
+import SiteFooter from '@/components/SiteFooter';
+import SiteHeader from '@/components/SiteHeader';
 
 const cloudLogos: Record<string, string> = {
   AWS: '/logos/aws.svg',

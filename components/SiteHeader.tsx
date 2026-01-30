@@ -3,9 +3,9 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
+import { CloseIcon, MenuIcon } from './icons';
 import LocaleToggle from './LocaleToggle';
 import ThemeToggle from './ThemeToggle';
-import { MenuIcon, CloseIcon } from './icons';
 
 export default function SiteHeader() {
   const t = useTranslations();
