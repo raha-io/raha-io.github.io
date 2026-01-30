@@ -1,3 +1,9 @@
-User-Agent: *
-Disallow:
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemaps
 Sitemap: https://raha-io.github.io/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1

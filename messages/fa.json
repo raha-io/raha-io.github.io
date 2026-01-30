@@ -196,5 +196,23 @@
   },
   "footer": {
     "copyright": "© ۲۰۲۵ رها آی‌او. همه حقوق محفوظ است."
+  },
+  "contactForm": {
+    "name": "نام",
+    "namePlaceholder": "نام شما",
+    "email": "ایمیل",
+    "emailPlaceholder": "ایمیل شما",
+    "company": "شرکت (اختیاری)",
+    "companyPlaceholder": "نام شرکت",
+    "message": "پیام",
+    "messagePlaceholder": "درباره پروژه خود بگویید...",
+    "send": "ارسال از طریق گیت‌هاب",
+    "sendViaEmail": "ارسال از طریق ایمیل",
+    "sending": "در حال ارسال...",
+    "sent": "پیام ارسال شد!"
+  },
+  "testimonials": {
+    "title": "نظر مشتریان",
+    "subtitle": "از تیم‌هایی که با آنها کار کرده‌ایم بشنوید"
   }
 }

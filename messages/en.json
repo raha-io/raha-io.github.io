@@ -196,5 +196,23 @@
   },
   "footer": {
     "copyright": "© 2025 Raha IO. All rights reserved."
+  },
+  "contactForm": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "company": "Company (optional)",
+    "companyPlaceholder": "Your company",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your project...",
+    "send": "Send via GitHub",
+    "sendViaEmail": "Send via Email",
+    "sending": "Sending...",
+    "sent": "Message sent!"
+  },
+  "testimonials": {
+    "title": "What clients say",
+    "subtitle": "Hear from teams we've worked with"
   }
 }
