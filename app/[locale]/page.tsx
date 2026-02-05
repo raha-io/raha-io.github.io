@@ -256,6 +256,21 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 />
                 <span className="squad-name">{t('clients.bitbarg')}</span>
               </a>
+              <a
+                href="https://hatchup.capital/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="squad-card"
+              >
+                <Image
+                  src="/logos/hatchup.jpg"
+                  alt={t('clients.hatchup')}
+                  width={64}
+                  height={64}
+                  className="squad-logo"
+                />
+                <span className="squad-name">{t('clients.hatchup')}</span>
+              </a>
             </div>
           </div>
         </section>
