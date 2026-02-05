@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/blog';
 
-export default function BlogPage() {
+export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const posts = getAllPosts();
 
   return (
@@ -22,7 +23,7 @@ export default function BlogPage() {
         ) : (
           <div className="posts-grid">
             {posts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="post-card">
+              <Link key={post.slug} href={`/${locale}/blog/${post.slug}`} className="post-card">
                 <h2>{post.frontmatter.title}</h2>
                 <p className="post-meta">{post.frontmatter.date}</p>
                 <p className="post-excerpt">{post.frontmatter.description}</p>

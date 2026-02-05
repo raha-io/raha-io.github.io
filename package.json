@@ -13,6 +13,8 @@
     "check:fix": "biome check --write ."
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/space-grotesk": "^5.2.10",
     "gray-matter": "^4.0.3",
     "next": "^16.1.6",
     "next-intl": "^4.8.2",
@@ -22,7 +24,8 @@
     "rehype-stringify": "^10.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
-    "unified": "^11.0.5"
+    "unified": "^11.0.5",
+    "vazirmatn": "^33.0.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.14",

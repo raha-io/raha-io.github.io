@@ -1,7 +1,7 @@
 :root {
   color-scheme: light;
-  --font-display: var(--font-display, "Fraunces"), "Vazirmatn", serif;
-  --font-body: var(--font-body, "Space Grotesk"), "Vazirmatn", sans-serif;
+  --font-display: "Space Grotesk", "Vazirmatn", sans-serif;
+  --font-body: "Inter", "Vazirmatn", sans-serif;
   --bg: #f7f1e7;
   --bg-alt: #efe8dc;
   --ink: #1b1e26;
@@ -108,7 +108,7 @@ body {
 }
 
 html[dir="rtl"] body {
-  font-family: "Vazirmatn", "Space Grotesk", sans-serif;
+  font-family: "Vazirmatn", "Inter", sans-serif;
   letter-spacing: 0;
 }
 
@@ -473,6 +473,7 @@ html[dir="rtl"] .mobile-menu.open {
 .btn.small {
   padding: 0.55rem 1.2rem;
   font-size: 0.85rem;
+  white-space: nowrap;
 }
 
 .locale-toggle {

@@ -2,11 +2,23 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import ErrorBoundary from '@/components/ErrorBoundary';
-import LocaleAttributes from '@/components/LocaleAttributes';
 import ScrollToTop from '@/components/ScrollToTop';
 import SkipLink from '@/components/SkipLink';
 import StructuredData from '@/components/StructuredData';
 import { routing } from '@/i18n/routing';
+
+// Local fonts
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/space-grotesk/400.css';
+import '@fontsource/space-grotesk/500.css';
+import '@fontsource/space-grotesk/600.css';
+import '@fontsource/space-grotesk/700.css';
+import 'vazirmatn/Vazirmatn-font-face.css';
+
+import '@/app/globals.css';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -115,16 +127,29 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
+  const dir = locale === 'fa' ? 'rtl' : 'ltr';
 
   return (
-    <>
-      <LocaleAttributes locale={locale} />
-      <SkipLink />
-      <NextIntlClientProvider messages={messages}>
-        <ErrorBoundary>{children}</ErrorBoundary>
-      </NextIntlClientProvider>
-      <ScrollToTop />
-      <StructuredData organization={organizationData} services={servicesData} />
-    </>
+    <html lang={locale} dir={dir} suppressHydrationWarning>
+      <head>
+        <link rel="alternate" hrefLang="en" href="/en" />
+        <link rel="alternate" hrefLang="fa" href="/fa" />
+        <link rel="alternate" hrefLang="x-default" href="/en" />
+        <StructuredData organization={organizationData} services={servicesData} />
+        <script
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: Theme script must run before render to prevent flash
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme'),s=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',t==='dark'||(!t&&s)?'dark':'light')}catch(e){}})()`,
+          }}
+        />
+      </head>
+      <body>
+        <SkipLink />
+        <NextIntlClientProvider messages={messages}>
+          <ErrorBoundary>{children}</ErrorBoundary>
+        </NextIntlClientProvider>
+        <ScrollToTop />
+      </body>
+    </html>
   );
 }

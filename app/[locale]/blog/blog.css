@@ -1,9 +1,15 @@
 /* Blog Header */
 .blog-header-static {
   border-bottom: 1px solid var(--border-light);
-  background: rgba(249, 242, 230, 0.85);
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
+}
+
+.blog-header-static .header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Blog Listing Page */
@@ -137,7 +143,7 @@
 }
 
 .prose pre {
-  background: var(--ink);
+  background: #1b1e26;
   color: #f8f8f2;
   padding: 1.25rem;
   border-radius: var(--radius-sm);
@@ -190,7 +196,7 @@
 /* Code Highlighting */
 .prose pre .hljs,
 .prose pre.hljs {
-  background: var(--ink);
+  background: #1b1e26;
 }
 
 .hljs-keyword,
