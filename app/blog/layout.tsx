@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import '@/app/globals.css';
 import './blog.css';
 
 export const metadata = {
@@ -10,32 +9,30 @@ export const metadata = {
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" dir="ltr">
-      <body>
-        <header className="site-header blog-header-static">
-          <div className="container header-inner">
-            <a className="brand" href="/">
-              <Image src="/logo.png" alt="Raha IO" width={44} height={44} className="brand-mark" />
-              <span className="brand-text">
-                <strong>Raha IO</strong>
-                <span>Blog</span>
-              </span>
-            </a>
-            <nav className="nav" aria-label="Blog navigation">
-              <a href="/">Home</a>
-              <a href="/blog">All Posts</a>
-            </nav>
-          </div>
-        </header>
-        <main>{children}</main>
-        <footer className="site-footer">
-          <div className="container">
-            <p className="footer-bottom">
-              &copy; {new Date().getFullYear()} Raha IO. All rights reserved.
-            </p>
-          </div>
-        </footer>
-      </body>
-    </html>
+    <>
+      <header className="site-header blog-header-static">
+        <div className="container header-inner">
+          <a className="brand" href="/">
+            <Image src="/logo.png" alt="Raha IO" width={44} height={44} className="brand-mark" />
+            <span className="brand-text">
+              <strong>Raha IO</strong>
+              <span>Blog</span>
+            </span>
+          </a>
+          <nav className="nav" aria-label="Blog navigation">
+            <a href="/">Home</a>
+            <a href="/blog">All Posts</a>
+          </nav>
+        </div>
+      </header>
+      <main>{children}</main>
+      <footer className="site-footer">
+        <div className="container">
+          <p className="footer-bottom">
+            &copy; {new Date().getFullYear()} Raha IO. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </>
   );
 }
