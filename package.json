@@ -28,9 +28,9 @@
     "vazirmatn": "^33.0.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.14",
-    "@types/node": "^25.2.1",
-    "@types/react": "^19.2.13",
+    "@biomejs/biome": "^2.3.15",
+    "@types/node": "^25.2.3",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "typescript": "^5.9.3"
   }
