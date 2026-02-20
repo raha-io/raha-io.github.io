@@ -17,7 +17,7 @@
     "@fontsource/space-grotesk": "^5.2.10",
     "gray-matter": "^4.0.3",
     "next": "^16.1.6",
-    "next-intl": "^4.8.2",
+    "next-intl": "^4.8.3",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "rehype-highlight": "^7.0.2",
