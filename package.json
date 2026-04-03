@@ -16,8 +16,8 @@
     "@fontsource/inter": "^5.2.8",
     "@fontsource/space-grotesk": "^5.2.10",
     "gray-matter": "^4.0.3",
-    "next": "^16.2.1",
-    "next-intl": "^4.8.3",
+    "next": "^16.2.2",
+    "next-intl": "^4.9.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "rehype-highlight": "^7.0.2",
@@ -28,8 +28,8 @@
     "vazirmatn": "^33.0.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.9",
-    "@types/node": "^25.5.0",
+    "@biomejs/biome": "^2.4.10",
+    "@types/node": "^25.5.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "typescript": "^6.0.2"
