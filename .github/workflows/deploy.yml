@@ -1,4 +1,4 @@
-name: Deploy Next.js site to Pages
+name: Deploy
 
 on:
   push:
@@ -11,8 +11,13 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: deploy
   cancel-in-progress: true
+
+env:
+  ORIGIN_HOST: 2.144.15.81
+  ORIGIN_USER: raha-io-deploy
+  ORIGIN_INCOMING: /srv/raha-io/incoming/
 
 jobs:
   build:
@@ -22,18 +27,58 @@ jobs:
       - uses: pnpm/action-setup@v6
         with:
           version: 10
-      - run: pnpm install
+      - run: pnpm install --frozen-lockfile
       - run: pnpm build
+      # For deploy-pages.
       - uses: actions/upload-pages-artifact@v5
         with:
           path: out
+      # For deploy-origin (rsync). Pages-formatted artifact is a single
+      # tar.gz wrapper that rsync would push verbatim, so we also publish a
+      # plain copy of the directory tree.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: out
+          retention-days: 7
 
-  deploy:
-    runs-on: ubuntu-latest
+  deploy-pages:
     needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/deploy-pages@v5
         id: deployment
+
+  deploy-origin:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: out
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "${{ secrets.DEPLOY_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Rsync to origin
+        run: |
+          rsync -az --delete --omit-dir-times \
+            -e "ssh -i ~/.ssh/id_ed25519 -o UserKnownHostsFile=~/.ssh/known_hosts" \
+            out/ "$ORIGIN_USER@$ORIGIN_HOST:$ORIGIN_INCOMING"
+
+      - name: Promote
+        run: |
+          ssh -i ~/.ssh/id_ed25519 \
+              -o UserKnownHostsFile=~/.ssh/known_hosts \
+              "$ORIGIN_USER@$ORIGIN_HOST" \
+              /usr/local/bin/raha-io-promote
