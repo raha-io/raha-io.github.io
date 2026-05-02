@@ -425,9 +425,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               </div>
               <div className="contact-item">
                 <strong>{t('contact.labels.github')}</strong>
-                <a href="https://github.com/raha-io" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/rahacloud" target="_blank" rel="noopener noreferrer">
                   <GitHubIcon />
-                  raha-io
+                  rahacloud
                 </a>
               </div>
               <div className="contact-item">

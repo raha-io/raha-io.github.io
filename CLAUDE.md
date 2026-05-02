@@ -1,4 +1,4 @@
-# Raha IO Website
+# Raha Cloud Website
 
 Next.js website with `next-intl` for i18n (English + Persian). Uses pnpm.
 

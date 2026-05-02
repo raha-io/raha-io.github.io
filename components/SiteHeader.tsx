@@ -51,7 +51,7 @@ export default function SiteHeader() {
     <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container header-inner">
         <a className="brand" href="#home">
-          <Image src="/logo.png" alt="Raha IO" width={44} height={44} className="brand-mark" />
+          <Image src="/logo.png" alt="Raha Cloud" width={44} height={44} className="brand-mark" />
           <span className="brand-text">
             <strong>{t('brand.name')}</strong>
             <span>{t('brand.tagline')}</span>

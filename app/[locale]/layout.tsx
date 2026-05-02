@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'meta' });
 
-  const baseUrl = 'https://raha-io.github.io';
+  const baseUrl = 'https://rahacloud.github.io';
 
   return {
     title: t('title'),
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: t('title'),
       description: t('description'),
       url: `${baseUrl}/${locale}`,
-      siteName: 'Raha IO',
+      siteName: 'Raha Cloud',
       locale: locale === 'fa' ? 'fa_IR' : 'en_US',
       type: 'website',
       images: [
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
           url: '/og-image.png',
           width: 1200,
           height: 630,
-          alt: 'Raha IO - Infrastructure, DevOps, Cloud',
+          alt: 'Raha Cloud - Infrastructure, DevOps, Cloud',
         },
       ],
     },
@@ -76,18 +76,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const organizationData = {
-  name: 'Raha IO',
+  name: 'Raha Cloud',
   description:
     'Infrastructure and DevOps solutions based on AWS, Hetzner, and Arvancloud to reduce operational overhead.',
-  url: 'https://raha-io.github.io',
-  logo: 'https://raha-io.github.io/logo.png',
+  url: 'https://rahacloud.github.io',
+  logo: 'https://rahacloud.github.io/logo.png',
   email: 'elahe.dstn@gmail.com',
   telephone: '+98 935 225 7378',
   address: {
     city: 'Istanbul',
     country: 'Turkey',
   },
-  sameAs: ['https://github.com/raha-io'],
+  sameAs: ['https://github.com/rahacloud'],
 };
 
 const servicesData = [

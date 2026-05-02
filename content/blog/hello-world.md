@@ -1,10 +1,10 @@
 ---
-title: "Welcome to the Raha IO Blog"
+title: "Welcome to the Raha Cloud Blog"
 date: "2026-01-02"
 description: "Introducing our technical blog where we share insights about DevOps, cloud infrastructure, and engineering best practices."
 ---
 
-Welcome to the Raha IO technical blog! This is where we'll share our knowledge and experience in building and maintaining robust infrastructure solutions.
+Welcome to the Raha Cloud technical blog! This is where we'll share our knowledge and experience in building and maintaining robust infrastructure solutions.
 
 ## What to Expect
 
@@ -18,7 +18,7 @@ We'll be covering a wide range of topics related to modern infrastructure and De
 
 ## Why We're Writing
 
-At Raha IO, we believe in sharing knowledge. The DevOps and cloud infrastructure space moves quickly, and we want to contribute back to the community that has helped us grow.
+At Raha Cloud, we believe in sharing knowledge. The DevOps and cloud infrastructure space moves quickly, and we want to contribute back to the community that has helped us grow.
 
 Each article will focus on practical, real-world solutions that we've implemented for our clients or discovered through our own research.
 

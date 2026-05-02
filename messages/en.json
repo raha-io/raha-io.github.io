@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Raha IO - Infrastructure, DevOps, Cloud",
+    "title": "Raha Cloud - Infrastructure, DevOps, Cloud",
     "description": "We provide infrastructure and DevOps solutions based on AWS, Hetzner, and Arvancloud to reduce your team's operational overhead."
   },
   "brand": {
-    "name": "Raha IO",
-    "nameFa": "Raha IO",
+    "name": "Raha Cloud",
+    "nameFa": "Raha Cloud",
     "tagline": "Infrastructure, DevOps and Cloud"
   },
   "lang": {
@@ -24,7 +24,7 @@
   "hero": {
     "eyebrow": "Company",
     "title": "Infrastructure that runs itself.",
-    "subtitle": "Raha IO helps teams reduce costs around maintaining and controlling infrastructure with DevOps solutions built on AWS, Hetzner, and Arvancloud.",
+    "subtitle": "Raha Cloud helps teams reduce costs around maintaining and controlling infrastructure with DevOps solutions built on AWS, Hetzner, and Arvancloud.",
     "ctaPrimary": "Let's build together",
     "ctaSecondary": "See services",
     "note": "Based in Istanbul, Turkey + Remote",
@@ -148,7 +148,7 @@
   },
   "team": {
     "title": "Meet the Team",
-    "subtitle": "The people behind Raha IO",
+    "subtitle": "The people behind Raha Cloud",
     "members": [
       {
         "name": "Elaheh Dastan",
@@ -197,7 +197,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Raha IO. All rights reserved."
+    "copyright": "© 2025 Raha Cloud. All rights reserved."
   },
   "contactForm": {
     "name": "Name",

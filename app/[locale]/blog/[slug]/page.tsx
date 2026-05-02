@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = await getPostBySlug(slug);
 
   if (!post) {
-    return { title: 'Post Not Found | Raha IO Blog' };
+    return { title: 'Post Not Found | Raha Cloud Blog' };
   }
 
   return {
-    title: `${post.frontmatter.title} | Raha IO Blog`,
+    title: `${post.frontmatter.title} | Raha Cloud Blog`,
     description: post.frontmatter.description,
   };
 }

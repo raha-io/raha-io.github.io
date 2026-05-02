@@ -32,7 +32,7 @@ ${formData.message}
     );
 
     window.open(
-      `https://github.com/raha-io/raha-io.github.io/issues/new?title=${title}&body=${body}&labels=contact`,
+      `https://github.com/rahacloud/rahacloud.github.io/issues/new?title=${title}&body=${body}&labels=contact`,
       '_blank'
     );
   };

@@ -4,7 +4,7 @@ import ThemeToggle from '@/components/ThemeToggle';
 import './blog.css';
 
 export const metadata = {
-  title: 'Blog | Raha IO',
+  title: 'Blog | Raha Cloud',
   description: 'Technical articles about DevOps, infrastructure, and cloud.',
 };
 
@@ -22,9 +22,9 @@ export default async function BlogLayout({
       <header className="site-header blog-header-static">
         <div className="container header-inner">
           <Link className="brand" href={`/${locale}`}>
-            <Image src="/logo.png" alt="Raha IO" width={44} height={44} className="brand-mark" />
+            <Image src="/logo.png" alt="Raha Cloud" width={44} height={44} className="brand-mark" />
             <span className="brand-text">
-              <strong>Raha IO</strong>
+              <strong>Raha Cloud</strong>
               <span>Blog</span>
             </span>
           </Link>
@@ -41,7 +41,7 @@ export default async function BlogLayout({
       <footer className="site-footer">
         <div className="container">
           <p className="footer-bottom">
-            &copy; {new Date().getFullYear()} Raha IO. All rights reserved.
+            &copy; {new Date().getFullYear()} Raha Cloud. All rights reserved.
           </p>
         </div>
       </footer>
