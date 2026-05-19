@@ -1,9 +1,7 @@
-'use client';
+import { getTranslations } from 'next-intl/server';
 
-import { useTranslations } from 'next-intl';
-
-export default function SiteFooter() {
-  const t = useTranslations();
+export default async function SiteFooter() {
+  const t = await getTranslations();
 
   return (
     <footer className="site-footer">

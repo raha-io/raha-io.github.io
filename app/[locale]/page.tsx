@@ -57,7 +57,7 @@ type TeamMember = {
   role: string;
   username: string;
   bio: string;
-  photo?: string;
+  photo: string;
   social: {
     github?: string;
     linkedin?: string;
@@ -320,13 +320,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               {teamMembers.map((member) => (
                 <div key={member.username} className="team-card">
                   <Image
-                    src={member.photo ?? `https://github.com/${member.username}.png`}
+                    src={member.photo}
                     alt={member.name}
                     width={96}
                     height={96}
                     className="team-photo"
-                    style={member.photo ? { objectPosition: 'center 20%' } : undefined}
-                    unoptimized
+                    style={{ objectPosition: 'center 20%' }}
                   />
                   <div className="team-card-body">
                     <h3 className="team-name">{member.name}</h3>
