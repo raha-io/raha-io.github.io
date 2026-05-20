@@ -5,6 +5,7 @@ FROM node:24-alpine AS deps
 WORKDIR /app
 ENV PNPM_HOME=/pnpm
 ENV PATH=$PNPM_HOME:$PATH
+ENV COREPACK_NPM_REGISTRY=https://mirror-npm.runflare.com
 RUN corepack enable
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
@@ -17,6 +18,7 @@ WORKDIR /app
 ENV PNPM_HOME=/pnpm
 ENV PATH=$PNPM_HOME:$PATH
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV COREPACK_NPM_REGISTRY=https://mirror-npm.runflare.com
 RUN corepack enable
 
 COPY --from=deps /app/node_modules ./node_modules
